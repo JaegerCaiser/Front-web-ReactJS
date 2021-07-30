@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { animated } from 'react-spring';
 
 interface ContainerProps {
-  hasdescription: boolean;
+  hasDescription: number;
   type?: 'info' | 'success' | 'error';
 }
 
@@ -63,7 +63,7 @@ const Container = styled(animated.div)<ContainerProps>`
   }
 
   ${props =>
-    !props.hasdescription &&
+    !props.hasDescription &&
     css`
       align-items: center;
 
